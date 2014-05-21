@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{703F36B2-24E6-416D-ADDA-06E653955EA5}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CalameoDownloader</RootNamespace>
+    <AssemblyName>CalameoDownloader</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.3\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Api\Account.cs" />
+    <Compile Include="Api\ApiInfo.cs" />
+    <Compile Include="Api\Audio.cs" />
+    <Compile Include="Api\Branding.cs" />
+    <Compile Include="Api\Calameo.cs" />
+    <Compile Include="Api\Content.cs" />
+    <Compile Include="Api\Customer.cs" />
+    <Compile Include="Api\Document.cs" />
+    <Compile Include="Api\Domains.cs" />
+    <Compile Include="Api\Download.cs" />
+    <Compile Include="Api\ResourceInfo.cs" />
+    <Compile Include="Api\CodedEnabled.cs" />
+    <Compile Include="Api\Events.cs" />
+    <Compile Include="Api\Features.cs" />
+    <Compile Include="Api\Intern.cs" />
+    <Compile Include="Api\Links.cs" />
+    <Compile Include="Api\Localization.cs" />
+    <Compile Include="Api\Logo.cs" />
+    <Compile Include="Api\Mini.cs" />
+    <Compile Include="Api\CodedUrl.cs" />
+    <Compile Include="Api\Modules.cs" />
+    <Compile Include="Api\ModedUrl.cs" />
+    <Compile Include="Api\Page.cs" />
+    <Compile Include="Api\SearchParams.cs" />
+    <Compile Include="Api\Print.cs" />
+    <Compile Include="Api\Related.cs" />
+    <Compile Include="Api\Search.cs" />
+    <Compile Include="Api\Share.cs" />
+    <Compile Include="Api\Skin.cs" />
+    <Compile Include="Api\Social.cs" />
+    <Compile Include="Api\Soundcloud.cs" />
+    <Compile Include="Api\Subscribers.cs" />
+    <Compile Include="Api\Subscription.cs" />
+    <Compile Include="Api\SwfInfo.cs" />
+    <Compile Include="Api\Toc.cs" />
+    <Compile Include="Api\Tracking.cs" />
+    <Compile Include="Api\UrlInfo.cs" />
+    <Compile Include="Api\Video.cs" />
+    <Compile Include="Api\Viewer.cs" />
+    <Compile Include="Api\RootObject.cs" />
+    <Compile Include="Api\EnabledInfo.cs" />
+    <Compile Include="BookCodeExtractor.cs" />
+    <Compile Include="BookInfoRetriever.cs" />
+    <Compile Include="BookRetriever.cs" />
+    <Compile Include="CalameoException.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebClientFactory.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
