@@ -1,8 +1,0 @@
-C:\Data\Mine\Code\CalameoDownloader\CalameoDownloader\bin\Debug\CalameoDownloader.exe.config
-C:\Data\Mine\Code\CalameoDownloader\CalameoDownloader\bin\Debug\CalameoDownloader.exe
-C:\Data\Mine\Code\CalameoDownloader\CalameoDownloader\bin\Debug\CalameoDownloader.pdb
-C:\Data\Mine\Code\CalameoDownloader\CalameoDownloader\bin\Debug\Newtonsoft.Json.dll
-C:\Data\Mine\Code\CalameoDownloader\CalameoDownloader\bin\Debug\Newtonsoft.Json.xml
-C:\Data\Mine\Code\CalameoDownloader\CalameoDownloader\obj\Debug\CalameoDownloader.csprojResolveAssemblyReference.cache
-C:\Data\Mine\Code\CalameoDownloader\CalameoDownloader\obj\Debug\CalameoDownloader.exe
-C:\Data\Mine\Code\CalameoDownloader\CalameoDownloader\obj\Debug\CalameoDownloader.pdb
